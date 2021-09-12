@@ -15,12 +15,15 @@
     --color3: #0000ff;
     --color4: #00ff00;
     --color5: #ff0000;
+
+    --default-space-between: 2rem;
 }
 
 
 body {
     height: 100%;
     line-height: 1.4;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(190deg, var(--color5), var(--color4), var(--color3));
 }
@@ -42,7 +45,15 @@ body {
     justify-content: center;
 }
 
-form p, label, input {
+.flex-column-gap {
+    gap: 1rem;
+}
+
+.form-flex-column-gap {
+    gap: var(--default-space-between);
+}
+
+p, label {
     font-size: 1.2rem;
 }
 
@@ -51,20 +62,50 @@ form p, label, input {
 header {
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding: var(--default-space-between);
 }
 
 /*-------------------------------------------------------------------------------------------------FORM-------------------------------------------------------------------------------------------------*/
 
 form {
-    margin: 0 auto;
-    padding: 20px;
     padding-top: 40px;
+    padding: var(--default-space-between);
+    border-radius: 20px;
+    margin: 0 auto 40px auto;
+    background-color: var(--color1);
 }
 
-form > div {
-    padding-bottom: 20px;
+/* .margin-bottom {
+    margin-bottom: 1rem;
+} */
+
+form input, select, textarea, button {
+    padding: 10px;
+    color: gray;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 1px solid gray;
 }
+
+form textarea {
+    font-size: 1.2rem
+}
+
+form p, label {
+    font-weight: 600;
+}
+
+form .input-radio {
+    transform: scale(1.2);
+}
+
+form button {
+    width: 100%;
+    height: 100%;
+    padding: var(--default-space-between);
+}
+
+
 
 /*Falta: 
 -terminar de estilisar o css;

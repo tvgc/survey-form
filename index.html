@@ -8,29 +8,34 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="div-main display-flex flex-direction-column">
-
     <div class="display-flex flex-direction-column">
-        <header class="display-flex flex-direction-column">
-            <h1 id="title">freeCodeCamp Survey Form</h1>
-            <h2 id="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos ex ullam?
-            </h2>
+
+        <header class="display-flex flex-direction-column flex-column-gap">
+            <h1 id="title">WHERE DO YOU LIVE</h1>
+            <p id="description">
+                A resident survey form
+            </p>
         </header>
-        <form class="display-flex flex-direction-column" action="" id="survey-form">
-            <div class="display-flex flex-direction-column">
-                <label id="name" for="name">Name</label>
+
+        <form class="display-flex flex-direction-column form-flex-column-gap" action="" id="survey-form">
+
+            <div class="display-flex flex-direction-column flex-column-gap">
+                <label class="margin-bottom" id="name" for="name">Name</label>
                     <input id="name-label" type="text" placeholder="Enter your name here" required>
             </div>
-            <div class="display-flex flex-direction-column">
-                <label id="email" for="email">Email</label>
+
+            <div class="display-flex flex-direction-column flex-column-gap">
+                <label class="margin-bottom" id="email" for="email">Email</label>
                     <input id="email-label" type="text" placeholder="Enter your Email here" required>
             </div>
-            <div class="display-flex flex-direction-column">
-                <label id="" for="age">Age</label>
+
+            <div class="display-flex flex-direction-column flex-column-gap">
+                <label class="margin-bottom" id="" for="age">Age</label>
                     <input id="number-label" id="number" type="number" min="10" max="100" placeholder="Age" required>
             </div>
-            <div class="display-flex flex-direction-column">
-                <p>Where are you from?</p>
+
+            <div class="display-flex flex-direction-column flex-column-gap">
+                <p class="margin-bottom">Where are you from?</p>
                     <select id="country" name="country">
                         <option disabled selected>Select a country</option>
                         <option value="Afganistan">Afghanistan</option>
@@ -279,28 +284,30 @@
                         <option value="Zaire">Zaire</option>
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
-                        </select>
+                    </select>
             </div>
-            <div class="display-flex flex-direction-column">
-                <p>Genre</p>
-                <label name="" for="">
-                    <input type="radio" name="" id="" value="">Male
-                </label>
-                <label name="" for="">
-                    <input type="radio" name="" id="" value="">Female
-                </label>
-                <label name="" for="">
-                    <input type="radio" name="" id="" value="">Other/Undefined
-                </label>
+
+            <div class="display-flex flex-direction-column flex-column-gap">
+                <p class="margin-bottom">Genre</p>
+                <div class="display-flex flex-direction-column">
+                    <label name="" for="">
+                        <input class="input-radio" type="radio" name="" id="" value=""> Male
+                    </label>
+                    <label name="" for="">
+                        <input class="input-radio" type="radio" name="" id="" value=""> Female
+                    </label>
+                    <label name="" for="">
+                        <input class="input-radio" type="radio" name="" id="" value=""> Other/Undefined
+                    </label>
+                </div>
             </div>
         
-            <div class="display-flex flex-direction-column">
-                <p>Which country do you most want to live in and why?</p>
-                <textarea name="" id="submit" cols="30" rows="10"></textarea>
+            <div class="display-flex flex-direction-column flex-column-gap">
+                <p class="margin-bottom">Which country do you most want to live in and why?</p>
+                <textarea name="" id="submit" cols="30" rows="10" placeholder="Enter your comment here.."></textarea>
             </div>
-            <div>
-                <button id="submit">Submit</button>
-            </div>
+
+            <button id="submit">Submit</button>
         
         </form>
     </div>
