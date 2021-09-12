@@ -1,0 +1,73 @@
+/*-------------------------------------------------------------------------------------------------DEFAULT-------------------------------------------------------------------------------------------------*/
+
+@charset "UTF-08";
+
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+:root {
+    --color1: #FFFFFF;
+    --color2: #000000;
+    --color3: #0000ff;
+    --color4: #00ff00;
+    --color5: #ff0000;
+}
+
+
+body {
+    height: 100%;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(190deg, var(--color5), var(--color4), var(--color3));
+}
+
+.div-main {
+    max-width: 75vh;
+    margin: 0 auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+form p, label, input {
+    font-size: 1.2rem;
+}
+
+/*-------------------------------------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------------------*/
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/*-------------------------------------------------------------------------------------------------FORM-------------------------------------------------------------------------------------------------*/
+
+form {
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+form > div {
+    padding-bottom: 20px;
+}
+
+/*Falta: 
+-terminar de estilisar o css;
+-terminar de arrumar o html;
+-inserir o conteudo do site;
+talvez mudar a cor. Talvez usar mais o branco e o preto e deixar para as tres cores para detalhes.*/
